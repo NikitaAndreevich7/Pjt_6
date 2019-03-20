@@ -17,8 +17,11 @@ p  { font-size: 18px; }
     margin: auto;
 }
 body{
+    width:100%;
+    min-width:100%;
     max-width:1500px;
     margin:auto;
+    
 }
 
 //header
@@ -57,7 +60,7 @@ body{
     }
 }
 .menu{
-    width:50%;
+    width:60%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -103,7 +106,8 @@ body{
     text-align:center;
     padding:50px 0;
     img{
-        margin-top:-300px;   
+        margin-top:-300px;  
+        max-width:100%; 
     }
 }
 .form-text{
@@ -146,58 +150,60 @@ body{
         border-radius:7px;    
 }
 }
-.form{
-    width:38%;
-    background-color:white;
+#cab{
+    color: #ffc61a;
 }
-.top-form{
-    background-color:black;
+.form-box{
+    width:40%;
+    height:100%;
+    background:white;
     h3{
-        color: #ffffff;
-        font-family: "Lato";
-        font-size:30px;
-        font-weight: 600;
-        text-transform: uppercase;
-        padding:20px 0;
-        text-align:left;
-        padding-left:50px;
+        background-color:black;
+        text-align:center;
+        color:white;
+        padding:15px 0;
+        width:100%;
     }
-    span{
-        color: #ffc61a;
-    }
+}
+form{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
 }
 input{
-    height:25px;
-    margin:15px 15px;
-    outline:none; 
-    font-size:17px;
-    font-weight:400;
-}
-#n{
-    width:150px;
+    width:45%;
+    height:30px;
     border:none;
-    border-bottom:2px solid silver;
+    border-bottom:1px solid silver;
+    outline:none;
+    font-family:Arial,sans-serif;
+    font-size:18px;
+    margin:30px 10px 0 10px;
 }
-#b{
-    width:87%;
-    border:none;
-    border-bottom:2px solid silver;
+#a{
+    width:95%;
+    height:30px;
+    margin:30px auto 0 auto;    
 }
-button{
-    width:90%;
-    padding:15px 0;
-    background-color: #131313;
-    border:none;
+#submit{
+    width:80%;
+    background:black;
     border-radius:7px;
-    margin-top:25px;
+    padding:10px 0;
+    margin: 35px auto;
+    border:none;
     color: #ffffff;
-    font-family: "Arial",sans-serif;
-    font-size: 19px;
+    font-family:Arial,sans-serif;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
-    cursor:pointer;
 }
-
+@media screen and ( max-width:1250px){
+    input{
+        width:90%;
+        height:20px;
+    }
+}
 //tariffs
 .tariffs{
      text-align:center;
@@ -231,6 +237,7 @@ button{
     background-color: #f5f4f2;
     img{
         width:300px;
+        max-width:100%;
         margin-top:-100px;
         margin-left:-10px;
     }
@@ -369,8 +376,8 @@ button{
     justify-content:space-between;  
 }
 .dwnld-txt{
-    width:45%;
-    padding:50px;
+    width:60%;
+    padding:165px 0 50px 0;
     h4{
         color: #000000;
         font-family: "Lato";
@@ -387,10 +394,14 @@ button{
         border-radius:30px;
         height:50px;
         margin-right:15px;
+
 }
 }
 #img-dwnl{
-    margin-bottom:-132px;
+    position:relative;
+    bottom:-132px;
+    right:-100px;
+    max-width:100%;
 }
 
 //clients
@@ -418,6 +429,7 @@ button{
     display:flex;
     justify-content:space-between;
 }
+
 .client-box{
     width:40%;
     text-align:left;

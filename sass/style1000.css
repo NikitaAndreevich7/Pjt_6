@@ -1,0 +1,46 @@
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  h1 {
+    font-size: 65px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    font-size: 27px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 90%;
+    margin: auto;
+  }
+  .menu {
+    width: 70%;
+  }
+  .menu a {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .form-box {
+    width: 50%;
+  }
+  .tfs-box span {
+    font-size: 35px;
+  }
+  .tfs-box a {
+    width: 60%;
+  }
+  #img-dwnl {
+    bottom: -132px;
+    right: -40px;
+    max-width: 100%;
+  }
+  #ph-foot {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=style1000.css.map */

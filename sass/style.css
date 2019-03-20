@@ -34,6 +34,8 @@ p {
 }
 
 body {
+  width: 100%;
+  min-width: 100%;
   max-width: 1500px;
   margin: auto;
 }
@@ -80,7 +82,7 @@ body {
 }
 
 .menu {
-  width: 50%;
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,6 +141,7 @@ body {
 
 .servies img {
   margin-top: -300px;
+  max-width: 100%;
 }
 
 .form-text {
@@ -194,63 +197,71 @@ body {
   border-radius: 7px;
 }
 
-.form {
-  width: 38%;
-  background-color: white;
-}
-
-.top-form {
-  background-color: black;
-}
-
-.top-form h3 {
-  color: #ffffff;
-  font-family: "Lato";
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 20px 0;
-  text-align: left;
-  padding-left: 50px;
-}
-
-.top-form span {
+#cab {
   color: #ffc61a;
 }
 
-input {
-  height: 25px;
-  margin: 15px 15px;
-  outline: none;
-  font-size: 17px;
-  font-weight: 400;
+.form-box {
+  width: 40%;
+  height: 100%;
+  background: white;
 }
 
-#n {
-  width: 150px;
-  border: none;
-  border-bottom: 2px solid silver;
-}
-
-#b {
-  width: 87%;
-  border: none;
-  border-bottom: 2px solid silver;
-}
-
-button {
-  width: 90%;
+.form-box h3 {
+  background-color: black;
+  text-align: center;
+  color: white;
   padding: 15px 0;
-  background-color: #131313;
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+input {
+  width: 45%;
+  height: 30px;
   border: none;
+  border-bottom: 1px solid silver;
+  outline: none;
+  font-family: Arial,sans-serif;
+  font-size: 18px;
+  margin: 30px 10px 0 10px;
+}
+
+#a {
+  width: 95%;
+  height: 30px;
+  margin: 30px auto 0 auto;
+}
+
+#submit {
+  width: 80%;
+  background: black;
   border-radius: 7px;
-  margin-top: 25px;
+  padding: 10px 0;
+  margin: 35px auto;
+  border: none;
   color: #ffffff;
-  font-family: "Arial",sans-serif;
-  font-size: 19px;
+  font-family: Arial,sans-serif;
+  font-size: 20px;
   font-weight: 400;
   text-transform: uppercase;
-  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  input {
+    width: 90%;
+    height: 20px;
+  }
 }
 
 .tariffs {
@@ -300,6 +311,7 @@ button {
 
 .tfs-box img {
   width: 300px;
+  max-width: 100%;
   margin-top: -100px;
   margin-left: -10px;
 }
@@ -466,8 +478,8 @@ button {
 }
 
 .dwnld-txt {
-  width: 45%;
-  padding: 50px;
+  width: 60%;
+  padding: 165px 0 50px 0;
 }
 
 .dwnld-txt h4 {
@@ -491,7 +503,10 @@ button {
 }
 
 #img-dwnl {
-  margin-bottom: -132px;
+  position: relative;
+  bottom: -132px;
+  right: -100px;
+  max-width: 100%;
 }
 
 .clients {

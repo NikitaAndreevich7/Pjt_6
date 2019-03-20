@@ -1,0 +1,48 @@
+@media screen and ( max-width:1000px) and (min-width:800px){
+    
+        // general style
+ 
+h1 { font-size: 65px; }
+h2 { font-size: 38px; }
+h3 { font-size: 27px; }
+h4 { font-size: 20px; }
+p  { font-size: 16px; }
+.wrapper{
+    width: 90%;
+    margin: auto;
+} 
+        //header
+.menu{
+    width:70%;
+    a{
+        font-weight:300;
+        font-size:14px;
+    }
+}
+        //servies
+.form-box{ width:50%; }
+
+        //tariffs
+.tfs-box{
+    span{ font-size: 35px; }
+    a { width:60%;}
+}
+
+        //download
+#img-dwnl{
+    bottom:-132px;
+    right:-40px;
+   
+    max-width:100%;
+}
+        //footer
+
+        #ph-foot{
+            width:70%;
+        }
+
+
+
+
+
+}

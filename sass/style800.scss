@@ -1,0 +1,85 @@
+@media screen and (max-width: 800px) and ( min-width:600px){
+            // general style
+ 
+h1 { font-size: 55px; }
+h2 { font-size: 32px; }
+h3 { font-size: 23px; }
+h4 { font-size: 17px; }
+p  { font-size: 14px; }
+.wrapper{
+    width: 90%;
+    margin: auto;
+} 
+        //header
+.menu{
+    display:none;
+}
+         //servies
+.form-text{
+    display:flex;
+    flex-direction:column;
+    padding:50px 0 0 0;
+    }
+    .text{
+        width:100%;
+    }
+    .form-box{
+        margin-top:30px;
+        width:100%;
+    }
+        //tariffs
+        
+.tfs-box{
+    span{ font-size: 25px; }
+    a { width:70%;}
+}
+        //download
+
+.dwnld-cont{
+    display:flex;
+    flex-direction:column;
+}  
+.dwnld-txt{
+    width:100%;
+    padding:50px 0 0px 0;
+}
+#img-dwnl{
+    bottom:-112px;
+    right:-150px;
+    width:400px;
+    max-width:100%;
+}
+        //clients
+
+.client-cont{
+    display:flex;
+    flex-direction:column;
+    
+}
+.one{
+    width:90%;
+    
+    
+}
+.two{
+    width:90%;
+    margin-top:15px;
+}
+        //footer
+
+.foot-cont{
+    display:flex;
+    flex-direction:column;
+    padding:50px 0;
+}
+.foot-box{
+    width:90%;
+    margin:45px 0;
+}
+#ph-foot{
+    width:35%;
+}
+
+
+
+}
