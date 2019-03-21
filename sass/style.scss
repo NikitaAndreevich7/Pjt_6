@@ -64,6 +64,11 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:fixed;
+    right:3%;
+    padding: 30px 10px;
+    border-radius:5px;
+    z-index:1000;
     a{
         color: #ffffff;
         font-family: "Lato";
@@ -76,7 +81,7 @@ body{
             color:black;
             background:#ffc61a;
             border-radius:20px;
-}
+        }
     }
 }
 .head-content{
@@ -234,14 +239,9 @@ input{
     display:flex;
     flex-direction:column;
     margin-top:100px;
-    padding:31px 5px;
+    padding:31px 0 0 0;
     background-color: #f5f4f2;
-    img{
-        width:300px;
-        max-width:100%;
-        margin-top:-100px;
-        margin-left:-10px;
-    }
+   
     h4{
         color: #000000;
         font-family: "Lato";
@@ -265,7 +265,6 @@ input{
     }
     a{
         width:40%;
-        margin:auto;
         color: #000000;
         font-family: "Arial",sans-serif;
         font-size: 18px;
@@ -274,19 +273,34 @@ input{
         padding:10px 20px;
         background-color: #ffc61a;
         border-radius:7px;
+        margin:auto auto 20px auto;
+        transition-duration: .2s;
 }
-    // &:hover{
-    //     background:#ffc61a;
-    //     z-index:1;
-    //     span{
-    //         color: #131313;
-    //     }
-    //     a{
-    //         background: #1b1b1b;
-    //         color:white;
-    //     }
-    // }
+    &:hover{
+        background:#ffc61a;
+        z-index:1;
+        span{
+            color: #131313;
+        }
+        a{
+            background: #1b1b1b;
+            color:white;
+        }
+    }
 }
+#tariffs_car{
+    width:300px;
+    max-width:100%;
+    margin-top:-100px;
+    margin-left:-10px;
+}
+#tf_aa, #tf_bb, #tf_cc{
+display:flex;
+justify-content:flex-end;  
+opacity:0;
+}
+
+
 
 //product
 
@@ -563,20 +577,4 @@ h3{
 }
 
 
-  /* tarifs*/
-.tarif{
-       background-image: url("../images/tariffs.png");
-       background-size:20% auto;
-       background-position:right bottom;
-       background-repeat:no-repeat;
-}
-.fon{
-    
-    span{
-        color: #131313;
-    }
-    a{
-        background: #1b1b1b;
-        color:white;
-    }
-}
+

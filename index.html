@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="sass/style1000.css">
     <link rel="stylesheet" href="sass/style800.css">
     <link rel="stylesheet" href="sass/style600.css">
+    <link rel="stylesheet" href="sass/btn.css">
 </head>
+
 <body>
-    <header class="header-cont">
+    <header class="header-cont" id= "home">
         <div class="header-cont2">
                 <div class="nav">
                     <div class="logo">
@@ -20,14 +22,26 @@
                         <h3>Call and Relex</h3>
                     </div>
                     <ul class="menu">
-                        <li> <a href="">home</a> </li>
-                        <li> <a href="">about</a> </li>
-                        <li> <a href="">features</a> </li>
-                        <li> <a href="">blog</a> </li>
-                        <li> <a href="">order now</a> </li>
-                        <li> <a href="">contacts</a> </li>
+                        <li> <a href="#home" onclick="slowScroll('#home')">home</a> </li>
+                        <li> <a href="#about" onclick="slowScroll('#about')">about</a> </li>
+                        <li> <a href="#tarfs" onclick="slowScroll('#fatrs')">features</a> </li>
+                        <li> <a href="#blog" onclick="slowScroll('#blog')">blog</a> </li>
+                        <li> <a href="#order" onclick="slowScroll('#order')">order now</a> </li>
+                        <li> <a href="#cont" onclick="slowScroll('#cont')">contacts</a> </li>
                     </ul>
+                    <ul class="menu-hover">
+                        <li> <a href="#home" onclick="slowScroll('#home')">home</a> </li>
+                        <li> <a href="#about" onclick="slowScroll('#about')">about</a> </li>
+                        <li> <a href="#fatrs" onclick="slowScroll('#fatrs')">features</a> </li>
+                        <li> <a href="#blog" onclick="slowScroll('#blog')">blog</a> </li>
+                        <li> <a href="#order" onclick="slowScroll('#order')">order now</a> </li>
+                        <li> <a href="#cont" onclick="slowScroll('#cont')">contacts</a> </li>
+                    </ul>
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                     </a>
                 </div>
+                <a href="#home" class="btn-top">dfdfdfd</a>
                 <div class="head-content">
                     <h1>+123 4567 8900</h1>
                     <h4>www.psd.in.ua</h4>
@@ -35,7 +49,7 @@
         </div>
     </header>
                                                                     <!-- servies -->
-    <section class="servies">
+    <section class="servies" id="order">
         <div class="wrapper">
             <div class="servies-box">
                 <img src="images/car.png" alt="">
@@ -64,37 +78,40 @@
         </div>
     </section>
                                                                     <!-- tariffs -->
-    <section class="tariffs">
+    <section class="tariffs" id= "about">
             <h3>Our</h3>
             <h2>Tariffs</h2>
             <div class="wrapper">
                 <div class="tfs-cont">
-                    <div class="tfs-box">
-                        <img src="images/little_car.png" alt="">
+                    <div class="tfs-box aa">
+                        <img src="images/little_car.png" alt="" id = "tariffs_car">
                         <h4>Economy Class</h4>
                         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                         <span>$1,5/mi</span>
                         <a href="#">Read More </a>
+                        <div id='tf_aa'> <img src="images/tariffs.png" alt=""> </div>
                     </div>
-                    <div class="tfs-box">
-                        <img src="images/little_car.png" alt="">
+                    <div class="tfs-box bb">
+                        <img src="images/little_car.png" alt="" id = "tariffs_car">
                         <h4>Standard Class</h4>
                         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                         <span>$1,5/mi</span>
                         <a href="#">Read More </a>
+                        <div id='tf_bb'> <img src="images/tariffs.png" alt=""> </div>
                     </div>
-                    <div class="tfs-box">
-                        <img src="images/little_car.png" alt="">
+                    <div class="tfs-box cc">
+                        <img src="images/little_car.png" alt="" id = "tariffs_car">
                         <h4>Business Class</h4>
                         <p>Quisque sollicitudin feugiat risus, eu posuere ex euismod eu. Phasellus hendrerit, massa efficitur.</p>
                         <span>$1,5/mi</span>
                         <a href="#">Read More</a>
+                       <div id='tf_cc'> <img src="images/tariffs.png" alt=""> </div>
                     </div>
                 </div>
             </div>
     </section>
                                                                         <!-- product -->
-    <section class="product">
+    <section class="product" id="fatrs">
         <div class="product2">
         <h3>We Do Best</h3>
         <h2>Than You Wish</h2>
@@ -138,7 +155,7 @@
         </div>
     </section>
                                                                 <!-- download -->
-    <section class="download">
+    <section class="download" id="blog">
         <h3>Download</h3>
         <h2>Best Cab Servies</h2>
         <div class="wrapper">
@@ -192,7 +209,7 @@
         <span id ="num">+123 4567 8900</span>
     </section>
                                                                 <!-- footer -->
-    <footer class="footer">
+    <footer class="footer" id="cont">
         <div class="footer2">
             <div class="wrapper">
                 <div class="foot-cont">

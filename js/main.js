@@ -1,11 +1,57 @@
 
 $(document).ready(function(){
-        $('.tfs-box').hover(
-        
-         function(){ $(this).addClass('tarif')},
-        function(){ $(this).removeClass('tarif') }
- );
+        $('.aa').hover(
+                function(){ $('#tf_aa').stop().animate({ opacity:1 },200)},
+                function(){ $('#tf_aa').stop().animate({ opacity:0 },200)}
+)// end function hover
 
+        $('.bb').hover(
+                function(){ $('#tf_bb').stop().animate({ opacity:1 },200)},
+                function(){ $('#tf_bb').stop().animate({ opacity:0 },200)}
+)// end function hover
 
+        $('.cc').hover(
+                function(){ $('#tf_cc').stop().animate({ opacity:1 },200)},
+                function(){ $('#tf_cc').stop().animate({ opacity:0 },200)}
+)// end function hover
+
+        $('.menu-hover').hide();
+        $('.menu-btn').on('click',function(evt){
+               evt.pteventDefault;
+              
+        $(this).toggleClass('menu-btn_active');
+        if($('.menu-hover').is(':hidden')){
+                $('.menu-hover').slideToggle(500);
+                $(this).addClass('close');
+        }else{
+                $('.menu-hover').slideUp(600);
+                $(this).removeClass('close');
+        }
+});//end gamburger menu
 });//end ready
 
+
+function slowScroll (id){
+        var offset = 40;
+$('html, body').animate({
+        scrollTop: $(id).offset().top - offset
+},1000);
+return false
+}; //scroll and
+
+
+$(window).scroll(function(){
+        if($(window).scrollTop() > '300'){
+                $('.menu').css({"background":"rgba(0,0,0,.9)"})
+        }else if($(window).scrollTop() < '300'){
+                $('.menu').css({"background":"none"})
+}
+});//background to scroll and
+
+$(window).scroll(function(){
+        if($(window).scrollTop() > '700'){
+                $('.btn-top').css({"background":"rgba(0,0,0,.9)"})
+        }else if($(window).scrollTop() < '700'){
+                $('.btn-top').css({"background":"none"})
+        }
+});
