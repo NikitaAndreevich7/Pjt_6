@@ -1,0 +1,154 @@
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 23px;
+  }
+  h4 {
+    font-size: 17px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .wrapper {
+    width: 95%;
+    margin: auto;
+  }
+  .nav {
+    padding: 20px 15px 0 15px;
+  }
+  .menu {
+    display: none;
+  }
+  .logo h1 {
+    font-size: 30px;
+  }
+  .logo span {
+    font-size: 30px;
+  }
+  .logo h3 {
+    font-weight: 200;
+  }
+  .head-content {
+    padding: 80px 0 300px 0;
+  }
+  .head-content h1 {
+    font-size: 40px;
+  }
+  .head-content h4 {
+    font-size: 17px;
+  }
+  .form-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0 0 0;
+  }
+  .text {
+    width: 100%;
+  }
+  .form-box {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .tfs-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tfs-box {
+    width: 100%;
+    padding: 31px 0;
+  }
+  .tfs-box span {
+    font-size: 25px;
+  }
+  .tfs-box a {
+    width: 70%;
+  }
+  .product-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .p-box {
+    width: 100%;
+  }
+  .dwnld-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dwnld-txt {
+    width: 100%;
+    padding: 20px 0 0px 0;
+  }
+  .dwnld-txt img {
+    height: 35px;
+  }
+  #img-dwnl {
+    bottom: -56px;
+    right: -70px;
+    width: 200px;
+    max-width: 100%;
+  }
+  .client-cont {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .client-box {
+    padding: 30px 15px;
+  }
+  .one {
+    width: 90%;
+  }
+  .two {
+    width: 90%;
+    margin-top: 15px;
+  }
+  .number {
+    background-color: #ffc61a;
+    text-align: center;
+    padding: 50px 0;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  #num {
+    font-size: 40px;
+  }
+  .foot-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .foot-box {
+    width: 90%;
+    margin: 45px 0;
+  }
+  #ph-foot {
+    width: 60%;
+  }
+}
+/*# sourceMappingURL=style600.css.map */

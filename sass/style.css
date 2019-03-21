@@ -296,6 +296,7 @@ input {
 }
 
 .tfs-box {
+  width: 30%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -306,7 +307,6 @@ input {
   margin-top: 100px;
   padding: 31px 5px;
   background-color: #f5f4f2;
-  width: 30%;
 }
 
 .tfs-box img {
@@ -351,19 +351,6 @@ input {
   padding: 10px 20px;
   background-color: #ffc61a;
   border-radius: 7px;
-}
-
-.tfs-box:hover {
-  background: #ffc61a;
-}
-
-.tfs-box:hover span {
-  color: #131313;
-}
-
-.tfs-box:hover a {
-  background: #1b1b1b;
-  color: white;
 }
 
 .product {
@@ -699,5 +686,22 @@ h3 {
       -ms-grid-row-align: center;
       align-self: center;
   padding-right: 10px;
+}
+
+/* tarifs*/
+.tarif {
+  background-image: url("../images/tariffs.png");
+  background-size: 20% auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
+.fon span {
+  color: #131313;
+}
+
+.fon a {
+  background: #1b1b1b;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

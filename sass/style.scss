@@ -230,6 +230,7 @@ input{
     justify-content:space-between;
 }
 .tfs-box{
+    width:30%;
     display:flex;
     flex-direction:column;
     margin-top:100px;
@@ -241,7 +242,6 @@ input{
         margin-top:-100px;
         margin-left:-10px;
     }
-    width:30%;
     h4{
         color: #000000;
         font-family: "Lato";
@@ -275,16 +275,17 @@ input{
         background-color: #ffc61a;
         border-radius:7px;
 }
-    &:hover{
-        background:#ffc61a;
-        span{
-            color: #131313;
-        }
-        a{
-            background: #1b1b1b;
-            color:white;
-        }
-    }
+    // &:hover{
+    //     background:#ffc61a;
+    //     z-index:1;
+    //     span{
+    //         color: #131313;
+    //     }
+    //     a{
+    //         background: #1b1b1b;
+    //         color:white;
+    //     }
+    // }
 }
 
 //product
@@ -558,5 +559,24 @@ h3{
             align-self:center;
             padding-right:10px;
         }
+    }
+}
+
+
+  /* tarifs*/
+.tarif{
+       background-image: url("../images/tariffs.png");
+       background-size:20% auto;
+       background-position:right bottom;
+       background-repeat:no-repeat;
+}
+.fon{
+    
+    span{
+        color: #131313;
+    }
+    a{
+        background: #1b1b1b;
+        color:white;
     }
 }
