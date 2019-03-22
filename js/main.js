@@ -37,7 +37,7 @@ $('html, body').animate({
         scrollTop: $(id).offset().top - offset
 },1000);
 return false
-}; //scroll and
+}; //and scroll 
 
 
 $(window).scroll(function(){
@@ -45,13 +45,14 @@ $(window).scroll(function(){
                 $('.menu').css({"background":"rgba(0,0,0,.9)"})
         }else if($(window).scrollTop() < '300'){
                 $('.menu').css({"background":"none"})
-}
-});//background to scroll and
+                
+        }
+});// and background to scroll
 
 $(window).scroll(function(){
-        if($(window).scrollTop() > '700'){
-                $('.btn-top').css({"background":"rgba(0,0,0,.9)"})
-        }else if($(window).scrollTop() < '700'){
-                $('.btn-top').css({"background":"none"})
+        if($(window).scrollTop() > '600'){
+                $('.btn-top').css({"opacity":"1"})
+        }else if($(window).scrollTop() <'600'){
+                $('.btn-top').css({"opacity":"0"}) 
         }
-});
+});// and btn-top 
